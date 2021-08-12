@@ -35,7 +35,7 @@ button:focus {
 }
 
 #generated {
-  display: none;
+  /* display: none; */
   margin: auto;
   max-width: 40%;
   background-color: rgb(24, 28, 85);
@@ -87,7 +87,7 @@ button:focus {
   color: white;
 }
 
-.fa-linkedin-square {
+.fa-linkedin {
   background: #007bb5;
   color: white;
 }

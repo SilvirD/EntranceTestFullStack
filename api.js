@@ -3,8 +3,6 @@ let getShorten = document.getElementById("getBtn");
 let generated = document.getElementById("generated");
 let shortenLink = document.getElementById("shortenLink");
 
-console.dir(getShorten);
-
 let buttons = document.getElementsByClassName("short");
 
 let choice;
