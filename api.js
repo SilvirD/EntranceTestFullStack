@@ -2,8 +2,8 @@ let requestLink = document.getElementById("requestLink");
 let getShorten = document.getElementById("getBtn");
 let generated = document.getElementById("generated");
 let shortenLink = document.getElementById("shortenLink");
-console.log(shortenLink);
-console.dir(shortenLink);
+
+console.dir(getShorten);
 
 let buttons = document.getElementsByClassName("short");
 
@@ -24,7 +24,9 @@ async function getAPI(link) {
 getShorten.onclick = async () => {
   if (choice) {
     if (requestLink.value) {
+      getShorten.innerHTML = `<i class="fas fa-spinner fa-spin"></i>`;
       let res = await getAPI(requestLink.value);
+      getShorten.innerHTML = `<i class="fas fa-arrow-right"></i>`;
 
       generated.style.display = "block";
 
